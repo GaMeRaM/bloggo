@@ -1,0 +1,32 @@
+.brand-space{
+	padding-left: 1em !important;
+}
+.posts{
+	padding:1em;
+    margin:1em;
+}
+.forms{
+	display: inline;
+}
+.controls{
+	float:right;
+}
+.container{
+	padding: 1em 0;
+}
+h1,h2,h3,h4,h5{
+	margin:0.2em 0;
+}
+iframe {
+	width: 100%;
+    height: 56.25vw; /* 100/56.25 = 560/315 = 1.778 */  
+}
+button {
+     background:none!important;
+     color:inherit;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     /*border is optional*/
+     cursor: pointer;
+}
