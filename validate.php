@@ -7,8 +7,13 @@
 	if ($conn->connect_error) {
 	    die("Connection failed: " . $conn->connect_error);
 	} 
-	$sql = "SELECT * FROM users WHERE login='".$user."' AND password='". $user_password ."'";
-	$result = $conn->query($sql);
+	#$sql = "SELECT * FROM users WHERE login='".$user."' AND password='". $user_password ."'";
+	$sql = "SELECT * FROM users WHERE login=(?) AND password=(?)";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("ss", $_POST[login], sha1($_POST[password]));
+	$stmt->execute();
+	$result = $stmt->get_result();
+	#$result = $conn->query($sql);
 	mysqli_close($conn);
 	if ($result->num_rows > 0){
         echo "Logged in";
