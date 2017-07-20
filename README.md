@@ -1,5 +1,5 @@
-~~# WARNING
-It is vulnerable to MySQL injections and i'm too lazy to fix it ._.  ~~
+~~# WARNING~~  
+~~It is vulnerable to MySQL injections and i'm too lazy to fix it ._.~~  
 Not anymore ;D
 
 # Blog written in PHP using Dwoo and Parsedown.
