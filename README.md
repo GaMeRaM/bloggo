@@ -1,7 +1,4 @@
-~~# WARNING~~  
-~~It is vulnerable to MySQL injections and i'm too lazy to fix it ._.~~  
-Not anymore ;D
-
+# Vulnerable to XSS attacks >.<  
 # Blog written in PHP using Dwoo and Parsedown.
 To install:
 1. Copy the files to the desired directory
